@@ -21,7 +21,7 @@ def second_supply_for_fourth_of_july(holiday_hash)
   holiday_hash.each do |months, value|
     if months == :summer
       value.each do |attribute, another_value|
-        binding.pry
+        return another_value[1]
       end
     end
   end
